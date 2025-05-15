@@ -1,0 +1,71 @@
+# Pokemon Data Collection - Easy and Hard Modes
+
+## Overview
+This project involves collecting and processing data about Pokémon using two distinct approaches:
+
+1. **Easy Mode:**
+   - Data is downloaded from a provided CSV link.
+   - The data includes multiple attributes such as stats, abilities, and evolution status.
+   - The data is processed and stored in a SQLite database (`pokemon.db`).
+   - Table: `Pokemon`
+   - Columns: `NUMBER`, `CODE`, `SERIAL`, `NAME`, `TYPE1`, `TYPE2`, `COLOR`, `ABILITY1`, `ABILITY2`, `ABILITY HIDDEN`, `GENERATION`, `LEGENDARY`, `MEGA_EVOLUTION`, `HEIGHT`, `WEIGHT`, `HP`, `ATK`, `DEF`, `SP_ATK`, `SP_DEF`, `SPD`, `TOTAL`
+
+2. **Hard Mode:**
+   - Data is scraped from Bulbapedia using BeautifulSoup.
+   - The structure is intentionally minimal due to limited data available on the page.
+   - Only `ID`, `Name`, `Type1`, and `Type2` are collected.
+   - The data is stored separately in a new SQLite database (`pokemon_scraped.db`).
+   - Table: `Pokemon_Scraped`
+   - Columns: `ID`, `Name`, `Type1`, `Type2`
+
+## Why the Differences in Data Structure?
+- The Easy Mode dataset provides extensive data, including stats, abilities, and evolutionary data, which are not available on the Bulbapedia page scraped in Hard Mode.
+- Therefore, the Hard Mode data structure is minimal, focusing only on `ID`, `Name`, `Type1`, and `Type2`.
+
+## Directory Structure:
+```
+/pokemon_analysis/
+│── easy_mode.py        # Easy Mode script
+│── hard_mode.py        # Hard Mode script
+│── data/
+│   ├── pokemon_data.csv  # CSV from Easy Mode
+│   └── scraped_data.csv  # CSV from Hard Mode
+│── db/
+│   ├── pokemon.db        # Database for Easy Mode
+│   └── pokemon_scraped.db # Database for Hard Mode
+│── README.md
+```
+
+## Data Handling and Inconsistencies:
+- During Easy Mode data processing, a discrepancy was identified in line 1043 of the dataset, containing 29 columns instead of the expected 22 columns.
+- To handle this, the script uses `on_bad_lines='skip'` to skip problematic lines and proceed with data processing.
+- In Hard Mode, data structure is minimal due to limited data availability on the scraped page.
+
+## Dependencies:
+- `requests`
+- `pandas`
+- `sqlite3`
+- `beautifulsoup4`
+
+Install dependencies:
+```
+pip install requests pandas beautifulsoup4
+```
+
+## Usage:
+1. Ensure the required libraries are installed.
+2. Run Easy Mode script:
+```
+python easy_mode.py
+```
+3. Run Hard Mode script:
+```
+python hard_mode.py
+```
+4. Check the data in the respective databases:
+   - `pokemon.db` for Easy Mode
+   - `pokemon_scraped.db` for Hard Mode
+
+## Important Notes:
+- Hard Mode data structure is limited due to restricted data availability on the Bulbapedia page. Only `ID`, `Name`, `Type1`, and `Type2` are collected.
+- Additional attributes like stats, abilities, and evolutionary data are not available in Hard Mode.
