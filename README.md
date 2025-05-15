@@ -117,7 +117,7 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 ## Links to Interactive Dashboards
 
 * **Google Spreadsheet:** \[https://docs.google.com/spreadsheets/d/14GUl8RGSYSAAipp1FNHYuyt0MmoCo9Zj8Q6McIWgfbY/edit?usp=sharing)]
-* **Looker Studio Dashboard:** \[https://lookerstudio.google.com/reporting/b6b9eb5b-7db2-41f5-af86-7ccd1b169eba]
+* **Looker Studio Dashboard:** \[[https://lookerstudio.google.com/reporting/b6b9eb5b-7db2-41f5-af86-7ccd1b169eba](https://lookerstudio.google.com/reporting/b6b9eb5b-7db2-41f5-af86-7ccd1b169eba)]
 
 ---
 
