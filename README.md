@@ -92,7 +92,7 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 
 ---
 
-## Logic, Troubleshooting, and Optimizations
+## Logic
 
 ### Logic & Approach
 
@@ -100,17 +100,6 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 * **Ranking Calculations**: Pandas DataFrames for flexibility, readability, and performance.
 * **Database Integration**: SQLite for ease of setup and data manipulation.
 
-### Troubleshooting Strategies
-
-* **Data verification**: Frequent use of pandas `.info()` and `.head()` methods to inspect data.
-* **SQL debugging**: Executed incremental queries to isolate and resolve errors.
-* **Streamlit dashboard**: Continuous verification by running `streamlit run pokemon_dashboard.py` to ensure interactive elements worked as intended.
-
-### Optimizations for Production
-
-* Replace SQLite with more robust database solutions like PostgreSQL for better performance in production.
-* Enhance caching strategies for dashboard queries.
-* Implement automated tests and CI/CD pipeline for continuous validation and deployment.
 
 ---
 
@@ -119,7 +108,7 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 * Used ChatGPT extensively to:
 
   * Clarify task requirements and breakdown the assignment into clear, manageable steps.
-  * Debug SQL queries and optimize pandas operations.
+  * Debug Python Code and optimize pandas operations.
   * Guide through unfamiliar tools (Looker Studio setup, Streamlit deployment).
   * Assist in interpreting results and troubleshooting unexpected behaviors, particularly during data cleaning and visualization steps.
 
@@ -127,8 +116,8 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 
 ## Links to Interactive Dashboards
 
-* **Google Spreadsheet:** \[Insert Link Here]
-* **Looker Studio Dashboard:** \[Insert Link Here]
+* **Google Spreadsheet:** \[https://docs.google.com/spreadsheets/d/14GUl8RGSYSAAipp1FNHYuyt0MmoCo9Zj8Q6McIWgfbY/edit?usp=sharing)]
+* **Looker Studio Dashboard:** \[https://lookerstudio.google.com/reporting/b6b9eb5b-7db2-41f5-af86-7ccd1b169eba]
 
 ---
 
