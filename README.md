@@ -125,7 +125,7 @@ This repository contains solutions for the Data Engineer (Python, SQL) test task
 
 All deliverables are compiled into a single Google document, accessible via the provided link. The document has been shared with required access levels.
 
-* Google Document link (containing GitHub and dashboards links): \[Insert Link Here]
+* Google Document link (containing GitHub and dashboards links): \[https://docs.google.com/document/d/1LSgfrKblIJuIqpG49JhJeFJIM9K41xdVGHj1l0jWFcE/edit?usp=sharing]
 
 Shared with:
 
